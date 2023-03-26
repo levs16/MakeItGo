@@ -13,9 +13,8 @@ try: # Using the "try" to execute
         if os.path.isfile(file): # Checking, whether the name is file, if yes, then proceed
             print(f"\n---------Script--------\nOverwriting {file}..\n-------------------\n.")
             k = random.randint(9999, 999999) # Getting a random value (can be reblaced with string or a fixed int)
-            f = open(f"{file}", "w") # Open the file as writable
-            f.write("Oops, overwritten! " * k) # Replace its contents with text (can be replaced)
-            count += 1
+            os.remove(file) # Remove the file
+            count += 1 # Add a 1 to the counter after the file deletion thing has been made
             print(f"\n---------Script--------\nOverwritten {file}. Deleted or/and overwritten: {count}\n-------------------\n")
         else: # Or, if name isn't a file, then proceed doing this
             print(f"\n---------Script--------\nDeleting {file} with its contents..\n_______________\n.")
@@ -24,7 +23,7 @@ try: # Using the "try" to execute
             print(f"\n---------Script--------\nDeleted {file}. Deleted or/and overwritten: {count}\n-------------------\n")
 
 except Exception as ex: # Printing out error (just for script to be beautiful)
-    print(f"\n____Script-Error_____\nOops, an error, details: {ex}\n-------------------______\n") # Printing out the error
+    print(f"\n-----Script-Error------\nOops, an error, details: {ex}\n-------------------______\n") # Printing out the error
 
 print(f"Total: {count} file(s) and/or dir(s)")
 print("\n=====COMPLETE=====\n") # Notify user that script executed
