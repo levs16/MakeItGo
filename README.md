@@ -1,6 +1,6 @@
 Hi!
 
-This is just a pretty simple Python Script that will delete your directories and overwrite your files!
+This is just a pretty simple Python Script that will delete your directories and files!
 
 Use only at your own risk!
 
