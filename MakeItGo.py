@@ -12,7 +12,7 @@ try: # Using the "try" to execute
 
         if os.path.isfile(obj): # Checking, whether the name is file, if yes, then proceed
             print(f"\n---------Script--------\nRemoving {obj}..\n-------------------\n.")
-            k = random.randint(9999, 999999) # Getting a random value (can be reblaced with string or a fixed int)
+            k = random.randint(9999, 999999) # Getting a random value (can be replaced with string or a fixed int)
             os.remove(obj) # Remove the file
             count += 1 # Add a 1 to the counter after the file deletion thing has been made
             print(f"\n---------Script--------\nRemoving {obj}. Deleted: {count}\n-------------------\n")
@@ -33,4 +33,3 @@ print("\n=====COMPLETE=====\n") # Notify user that script executed
 # USE AT YOUR OWN RISK! CAN REMOVE IMPORTANT FOR YOU FILES!
 
 # MADE ONLY FOR EDUCATIONAL AND TESTING PURPOSES!
-
